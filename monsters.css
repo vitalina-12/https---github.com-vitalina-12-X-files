@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     font-family: "Oswald", sans-serif;
+     font-weight: 400;
+     color: black;
+     font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    color: rgb(195, 207, 223);
+}
+
+.wrapper {
+    background-color: rgb(14, 40, 61);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right;
+    width: 50%
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active a {
+    color: rgb(195, 207, 223);
+}
+
+header nav ul li:not(.active) a:hover {
+    border-bottom: 5px solid #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 128px;
+    height: 5px;
+    background:  rgb(195, 207, 223);
+}
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero_info {
+    width: auto; 
+    max-width: 1200px; 
+    padding-top: 35px;
+    margin: 0 auto;
+}
+
+.hero_info h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.monsters-table .image_cell {
+    width: 40%;
+    min-width: 300px;
+    padding: 15px;
+    vertical-align: top;
+}
+
+.table-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    min-height: 800px;
+}
+
+.table-container::before {
+     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('ufo.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-position: center center;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.monsters-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: transparent;
+    position: relative;
+}
+
+.monsters-table .text_cell {
+    width: 60%;
+    padding: 15px;
+    vertical-align: top;
+    text-align: left; 
+    line-height: 1.6;
+}
+
+.monsters-table img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.monster-link {
+    display: block;
+    color: black;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.monster-link:hover {
+    color: rgb(195, 207, 223); 
+    transform: translateY(-2px);
+}

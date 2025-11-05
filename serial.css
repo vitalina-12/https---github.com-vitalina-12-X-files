@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+     font-family: "Oswald", sans-serif;
+     font-weight: 400;
+     color: #fff;
+     font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    background-color: rgb(14, 40, 61);
+    width: 100%;
+    min-height: 100vh;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+header {
+    padding: 30px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 27px;
+    font-weight: 800;
+    color: rgb(195, 207, 223);
+}
+
+header nav {
+    float: right;
+    width: 50%
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block;
+}
+
+header nav ul li a {
+    color: #fff;
+}
+
+header nav ul li.active a {
+    color: rgb(195, 207, 223);
+}
+
+header nav ul li:not(.active) a:hover {
+    border-bottom: 5px solid #fff;
+}
+
+header nav ul li.active::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 5px;
+    background:  rgb(195, 207, 223);
+}
+
+.hero {
+    padding-bottom: 100px;
+}
+
+.hero_info {
+    width: 100%;
+    max-width: 1400px;
+    padding-top: 35px;
+}
+
+.hero_info h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero_info h1 {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(195, 207, 223);
+}
+
+.hero_info h3 {
+    font-size: 50px;
+    font-weight: 500;
+    color: rgb(195, 207, 223);
+    margin-top: 100px;
+}
+
+.hero_info h4 {
+    color: rgb(195, 207, 223);
+}
+
+.hero_info p {
+    font-weight: 400;
+    line-height: 170%;
+    margin: 30px 0;
+    width: 530px;
+}
+
+.three_seasons {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between; 
+}
+
+.season_side {
+    flex: 1; 
+}
+
+.season_center {
+    flex: 1; 
+}
+
+.season_side h4,
+.season_center h4 {
+    color: rgb(195, 207, 223);
+    margin-bottom: 15px;
+}
+
+.season_side ol,
+.season_center ol {
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+.season_side,
+.season_center {
+    flex: 1;
+    min-width: 0; 
+}
+
+.hero_info .image {
+    width: 260px;
+    height: auto;
+    position: absolute;
+    left: 980px;
+    top: 20%;
+}
+
+.internal-nav {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: rgba(195, 207, 223, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.internal-nav a {
+    margin: 0 15px;
+    color: rgb(195, 207, 223);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.internal-nav a:hover {
+    color: #fff;
+    text-decoration: underline;
+}

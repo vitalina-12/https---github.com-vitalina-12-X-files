@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X-files</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="container">
+            <span class="logo">X-files</span>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="main_link">Главная</a></li>
+                    <li class="active"><a href="">Регистрация</a></li>
+                    <li><a href="about_serial.html">О сериале</a></li>
+                    <li><a href="main_characters.html">Главные герои</a></li>
+                    <li><a href="daily_monsters.html">Монстры недели</a></li>
+                    <li><a href="s_networks.html">Наши соцсети</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero container">
+            <div class="hero_info">
+                <h1>Регистрация на сайте</h1>
+
+                <!-- Форма 1: Личные контактные данные -->
+                <div class="form-section">
+                    <h2>Форма личных контактных данных</h2>
+                    <form action="https://www.bing.com/search?" method="GET" target="_blank">
+                        <input type="hidden" name="q" value="search?">
+
+                        <div class="form-group">
+                            <label for="last_name">Фамилия:</label>
+                            <input type="text" id="last_name" name="last_name" value="Пригов" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first_name">Имя:</label>
+                            <input type="text" id="first_name" name="first_name" value="Дмитрий" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="group">Группа:</label>
+                            <input type="text" id="group" name="group" value="2" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Мобильный телефон:</label>
+                            <input type="tel" id="phone" name="phone" value="+79991234567" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Электронная почта:</label>
+                            <input type="email" id="email" name="email" value="oceloticks@mail.ru" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="submission_date">Дата отправки:</label>
+                            <input type="date" id="submission_date" name="submission_date" value="05.11.2025" required>
+                        </div>
+
+                        <input type="hidden" name="form_type" value="contact_data">
+                        <input type="hidden" name="department" value="x-files">
+
+                        <div class="form-buttons">
+                            <button type="submit">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form-section">
+                    <h2>Отзыв о сериале</h2>
+                    <form action="https://www.bing.com/search?" method="GET" target="_blank">
+                        <input type="hidden" name="q" value="search?">
+
+                        <div class="form-group">
+                            <label for="viewer_name">Имя зрителя:</label>
+                            <input type="text" id="viewer_name" name="viewer_name" value="Валенок" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="seasons_watched">Количество просмотренных сезонов:</label>
+                            <input type="number" id="seasons_watched" name="seasons_watched" min="1" max="11" value="5"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Любимый персонаж:</label>
+                            <div class="radio-group">
+                                <input type="radio" id="mulder" name="favorite_character" value="mulder" checked>
+                                <label for="mulder">Фокс Малдер</label>
+
+                                <input type="radio" id="scully" name="favorite_character" value="scully">
+                                <label for="scully">Дана Скалли</label>
+
+                                <input type="radio" id="smoking_man" name="favorite_character" value="smoking_man">
+                                <label for="smoking_man">Курильщик</label>
+
+                                <input type="radio" id="scinner" name="favorite_character" value="scinner">
+                                <label for="scinner">Директор Скиннер</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Что понравилось:</label>
+                            <div class="checkbox-group">
+                                <input type="checkbox" id="conspiracy" name="likes" value="conspiracy" checked>
+                                <label for="conspiracy">Теории заговора</label>
+
+                                <input type="checkbox" id="monsters" name="likes" value="monsters">
+                                <label for="monsters">Монстры недели</label>
+
+                                <input type="checkbox" id="atmosphere" name="likes" value="atmosphere">
+                                <label for="atmosphere">Атмосфера таинственности</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="first_watch_date">Дата первого просмотра:</label>
+                            <input type="date" id="first_watch_date" name="first_watch_date" value="05.10.2025"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="moderation_password">Пароль:</label>
+                            <input type="password" id="moderation_password" name="moderation_password" value="trustno1"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="review_text">Текст отзыва:</label>
+                            <textarea id="review_text" name="review_text" rows="4"
+                                required>Сериал вайбик! Особенно нравятся серии с монстрами недели.</textarea>
+                        </div>
+
+                        <input type="hidden" name="form_type" value="series_review">
+                        <input type="hidden" name="show_name" value="The X-Files">
+
+                        <div class="form-buttons">
+                            <button type="submit">Отправить отзыв</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
